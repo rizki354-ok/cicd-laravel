@@ -17,7 +17,7 @@ class CalculatorTest extends TestCase
     }
 
     /** @test */
-    public function it_can_add_two_numbers(): void
+    public function test_it_can_add_two_numbers(): void
     {
         $result = $this->calc->add(10, 5);
 
@@ -25,7 +25,7 @@ class CalculatorTest extends TestCase
     }
 
     /** @test */
-    public function it_can_subtract_two_numbers(): void
+    public function test_it_can_subtract_two_numbers(): void
     {
         $result = $this->calc->subtract(10, 3);
 
@@ -33,15 +33,15 @@ class CalculatorTest extends TestCase
     }
 
     /** @test */
-    public function it_can_multiply_two_numbers(): void
+    public function test_it_can_multiply_two_numbers(): void
     {
         $result = $this->calc->multiply(4, 3);
 
-        $this->assertEquals(12, $result);
+        $this->assertEquals(112, $result);
     }
 
     /** @test */
-    public function it_can_divide_two_numbers(): void
+    public function test_it_can_divide_two_numbers(): void
     {
         $result = $this->calc->divide(10, 2);
 
@@ -49,7 +49,7 @@ class CalculatorTest extends TestCase
     }
 
     /** @test */
-    public function it_throws_exception_when_dividing_by_zero(): void
+    public function test_it_throws_exception_when_dividing_by_zero(): void
     {
         $this->expectException(InvalidArgumentException::class);
         $this->expectExceptionMessage('Pembagi tidak boleh nol.');
