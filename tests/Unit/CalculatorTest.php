@@ -37,7 +37,7 @@ class CalculatorTest extends TestCase
     {
         $result = $this->calc->multiply(4, 3);
 
-        $this->assertEquals(112, $result);
+        $this->assertEquals(12, $result);
     }
 
     /** @test */
